@@ -4,10 +4,12 @@ html {
 
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    max-width: 95%;
+    background: white url(./Studios_Gif_Flat_web.gif) no-repeat right;
     /* justify-content: flex-start; */
   }
 
@@ -18,10 +20,13 @@ header {
 nav {
     min-height: 10%;
     background-color: steelblue;
-    width: 90%;
 }
 
-
+nav ul li{
+    display: inline;
+    width: 20%;
+    padding: .5rem;
+}
 
 .treeofknowledge {
 
@@ -42,5 +47,4 @@ nav {
 footer {
     min-height: 10%;
     background-color: steelblue;
-    width: 90%;
 }
