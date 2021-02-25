@@ -12,12 +12,9 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     min-height: 100%;
     background: white;
-    /* max-width: 80rem; */
-
   }
  
 
@@ -31,58 +28,67 @@ header {
 
  .logo {
      width: 80%;
-     padding: 10px 5px;
+     padding: 14px 10px 8px 10px;
 }
 
 .logocont {
     position: absolute;
     background-color: white;
-    border: 1px solid var(--grey);
+    border: 1px solid #909090;
     width: 6rem;
-    margin-top: 1rem;
+    margin-top: -2.29rem;
     text-align: center;
-    margin-left: 4rem;
+    margin-left: 1.25rem;
 }
 
-main {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 90%;
-    text-align: center;
 
-}
 
 a {
     text-decoration: none;
 }
 
 nav {
-    /* margin-left: -10rem;
-    margin-right: 10rem; */
     padding-left: 8rem;
-    min-height: 1rem;
-    /* min-width: 100%; */
+    min-height: 3rem;
+    min-width: 100%;
+    flex-direction: column;
     background-color: var(--lav);
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
+nav ul{
+    margin-left: 5rem;
+}
+
 nav ul li{
     display: inline;
     width: 20%;
     padding: 1rem;
+    line-height: 1rem;
 }
 
 nav ul li:hover{
     background-color: var(--grey);
-    text-transform: uppercase;
 }
 
 li a, a:hover, a:visited, a:active {
     text-decoration: none;
     color: white;
+}
+
+a:selected {
+    border: 1px solid #909090;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    /* text-align: center; */
+
 }
 
 h3 a, a:hover, a:visited, a:active {
@@ -112,55 +118,119 @@ h3 {
         margin-right: 1rem;
 }
 
-.treeofknowledge {
+.animated {
+    float: right;
+    z-index: 2;
+    position: relative;
+    margin-top: -5rem;
+    width: 30%;
+}
+
+ .knowledge{
     width: 90%;
     text-align: left;
+ }
+
+.treeofknowledge {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
 }
 
 .know {
-    width: 25px;
-    height: 25px;
+    width: 5rem;
+    height: 3.75rem;
     border: var(--lav) solid 1px;
-    border-radius: 9px;
+    border-radius: 5px;
     color: white;
     background-color: var(--grey);
-    padding: 5px;
-    margin: 2px;
-
+    padding: 1.25rem 0rem 0rem 0rem;
+    margin: .5rem;
+    text-align: center;
+    line-height: 1;
+    flex: 1 0 10%
+    font-size: 1em;
 }
 
-.currprojects {
+h4 {
+    color: var(--grey);
+    margin-left: .5rem;
+}
+.learn {
+    width: 5rem;
+    height: 3.75rem;
+    border: var(--grey) solid 1px;
+    border-radius: 5px;
+    color: var(--grey);
+    background-color: white;
+    padding: 1.25rem 0rem 0rem 0rem;
+    margin: .5rem;
+    text-align: center;
+    line-height: 1;
+    flex: 1 0 10%
+    font-size: 1em;
+}
+
+/* .currprojects {
     width: 90%;
     text-align: left;
-}
+} */
+
+
 
 .lateprojects {
     width: 90%;
-    text-align: left;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .project {
-    border: 1px solid var(--grey);
+    /* border: 1px solid var(--grey); */
+    border-radius: 10px;
     padding: 5px;
+    margin: 5px;
     color: var(--grey);
-    flex: 1 0 33%;
+    flex: 1 0 20%;
+    max-width: 25%;
+}
+
+.lates {
+    flex: 1 0 50%;
+    max-width: 50%;
 }
 
 .title {
     line-height: 1.5;
     background-color: var(--grey);
     color: white;
+    padding: .25rem;
+    border-radius: 0px 0px 5px 5px;
 }
 
-.igfeed {
+/* .igfeed {
     width: 90%;
     text-align: left;
-}
+} */
 
 footer {
     min-height: 10%;
     background-color: var(--lav);
+    min-width: 100%;
     color: white;
     line-height: .5;
     text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    .project {
+        flex: 1 0 33%;
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 762px) {
+    .project {
+        flex: 1 0 100%;
+        max-width: 90%;
+    }
 }
