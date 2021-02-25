@@ -2,49 +2,165 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --lav: #A4ADCB;
+    --grey: #707070;
+}
+
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-evenly;
     min-height: 100%;
-    max-width: 95%;
-    background: white url(./Studios_Gif_Flat_web.gif) no-repeat right;
-    /* justify-content: flex-start; */
+    background: white;
+    /* max-width: 80rem; */
+
   }
+ 
+
 
 header {
+    background-color: white;
+    min-height: 5rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+ .logo {
+     width: 80%;
+     padding: 10px 5px;
+      }
+
+.logocont {
+    position: absolute;
+    background-color: white;
+    border: 1px solid var(--grey);
+    width: 6rem;
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 4rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    text-align: center;
 
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
-    min-height: 10%;
-    background-color: steelblue;
+    /* margin-left: -10rem;
+    margin-right: 10rem; */
+    padding-left: 16rem;
+    min-height: 1rem;
+    /* min-width: 100%; */
+    background-color: var(--lav);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 nav ul li{
     display: inline;
     width: 20%;
-    padding: .5rem;
+    padding: 1rem;
+}
+
+nav ul li:hover{
+    background-color: var(--grey);
+    text-transform: uppercase;
+}
+
+li a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+h3 a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+h3 {
+    min-height: 1rem;
+    background-color: var(--lav);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid var(--grey);
+    padding: 1rem;
+}
+
+.About {
+    width: 90%;
+    text-align: left;
+}
+
+.profPic {
+        width: 7rem;
+        float: left;
+        border: 1px solid var(--grey);
+        margin-right: 1rem;
 }
 
 .treeofknowledge {
-
+    width: 90%;
+    text-align: left;
 }
 
-.currprojects {
+.know {
+    width: 25px;
+    height: 25px;
+    border: var(--lav) solid 1px;
+    border-radius: 9px;
+    color: white;
+    background-color: var(--grey);
+    padding: 5px;
+    margin: 2px;
 
+}
+.currprojects {
+    width: 90%;
+    text-align: left;
 }
 
 .lateprojects {
+    width: 90%;
+    text-align: left;
+}
+
+.project {
+    border: 1px solid var(--grey);
+    padding: 5px;
+    color: var(--grey);
+    width: ;
 
 }
 
-.igfeed {
+.title {
+    line-height: 1.5;
+    background-color: var(--grey);
+    color: white;
+}
 
+.igfeed {
+    width: 90%;
+    text-align: left;
 }
 
 footer {
     min-height: 10%;
-    background-color: steelblue;
+    background-color: var(--lav);
+    color: white;
+    line-height: .5;
+    text-align: center;
 }
