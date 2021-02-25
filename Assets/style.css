@@ -32,7 +32,7 @@ header {
  .logo {
      width: 80%;
      padding: 10px 5px;
-      }
+}
 
 .logocont {
     position: absolute;
@@ -128,6 +128,7 @@ h3 {
     margin: 2px;
 
 }
+
 .currprojects {
     width: 90%;
     text-align: left;
@@ -142,8 +143,7 @@ h3 {
     border: 1px solid var(--grey);
     padding: 5px;
     color: var(--grey);
-    width: ;
-
+    flex: 1 0 33%;
 }
 
 .title {
