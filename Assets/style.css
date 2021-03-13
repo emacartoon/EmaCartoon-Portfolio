@@ -91,7 +91,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     /* flex-flow: column; */
-    width: 90%;
+    /* width: 90%; */
     /* text-align: center; */
 
 }
