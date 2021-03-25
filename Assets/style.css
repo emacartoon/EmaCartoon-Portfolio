@@ -7,7 +7,12 @@ html {
 :root {
     --lav: #A4ADCB;
     --grey: #707070;
-}
+    --dkgrey: #4d4d4d;
+    --penk: #dc9ce4;
+    --bloo: #b7c8f9;
+    --teel: #acebd1;
+    --halfgrey: rgba(70,70,70,.5)
+  }
 
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -217,11 +222,15 @@ h4 {
 } */
 
 footer {
-    min-height: 10%;
+    position: fixed;
+    bottom: 0;
+    min-height: 5rem;
     background-color: var(--lav);
     min-width: 100%;
     color: white;
-    line-height: .5;
+    margin-top: 5rem;
+    padding-top: 0.1rem;
+    line-height: 1rem;
     text-align: center;
 }
 
